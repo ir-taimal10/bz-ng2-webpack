@@ -83,5 +83,15 @@ module.exports = generators.Base.extend({
     });
   }*/
 
-  end: function() {}
+  end: function () {
+    this.log(yosay("We're almost ready! \n " +
+      "To start the project follow these 3 steps.\n\n" +
+      "Run the commands on the WebContent folder :\n"));
+    this.log('#Step 1: Add required global libraries');
+    this.log('WebContent> npm install typings webpack-dev-server rimraf webpack -g');
+    this.log('#Step 2: Install the repo with npm');
+    this.log('WebContent> npm install');
+    this.log('#Step 3: Start the server');
+    this.log('WebContent> npm start');
+  }
 });
