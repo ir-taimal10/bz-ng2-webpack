@@ -1,0 +1,27 @@
+<nav>
+      <span>
+        <a [routerLink]=" ['./'] "> {{'general_nav_option_index' | translate}}</a>
+      </span>
+    |
+      <span>
+        <a [routerLink]=" ['./home'] ">{{'general_nav_option_home' | translate}} </a>
+      </span>
+    |
+      <span>
+        <a [routerLink]=" ['./amusement/myTitle'] "> {{'general_nav_option_amusement' | translate}} </a>
+      </span>
+    |
+      <span>
+        <a [routerLink]=" ['./about'] ">{{'general_nav_option_about' | translate}}</a>
+      </span>
+
+    <language-selector class="right-item"></language-selector>
+</nav>
+
+<main>
+    <router-outlet></router-outlet>
+</main>
+<!--<pre class="app-state">this.appState.state = {{ appState.state | json }}</pre>-->
+<footer>
+    <span class="copyright">{{'general_copyright' | translate}}</span>
+</footer>

@@ -1,0 +1,5 @@
+<a target="_blank" href="https://docs.angularjs.org/guide/component">
+    <h>{{'general_component' | translate }} : {{ctrl.title}}</h>
+    <br/>
+    <a ng-click="ctrl.showAlert()">Click here</a>
+</a>

@@ -1,0 +1,69 @@
+.bounce {
+  margin: 100px auto 0;
+  width: 70px;
+  text-align: center;
+  div {
+    width: 12px;
+    height: 12px;
+    background-color: rgba(8, 71, 171, 0.4);
+    border-radius: 30%;
+    display: inline-block;
+    -webkit-animation: sk-bouncedelay 1.4s infinite ease-in-out both;
+    animation: sk-bouncedelay 1.4s infinite ease-in-out both;
+  }
+  .bounce1 {
+    -webkit-animation-delay: -0.32s;
+    animation-delay: -0.32s;
+  }
+  .bounce2 {
+    -webkit-animation-delay: -0.16s;
+    animation-delay: -0.16s;
+  }
+}
+
+.content {
+  text-align: center;
+  width: 100%;
+  color: rgba(26, 171, 161, 1);
+}
+
+.bounce.mix {
+  margin: 0;
+  width: 54px;
+  text-align: left;
+  float: left;
+  .bounce1 {
+    background-color: rgba(52, 52, 52, 0.8);
+  }
+  .bounce2 {
+    background-color: rgba(235, 235, 235, 0.8);
+  }
+  .bounce3 {
+    background-color: rgba(132, 132, 132, 0.8);
+  }
+}
+
+.content.mix {
+  display: inline;
+  color: rgba(33, 33, 33, 0.8);
+}
+
+@-webkit-keyframes sk-bouncedelay {
+  10%, 20%, 30% {
+    -webkit-transform: scale(0)
+  }
+  40% {
+    -webkit-transform: scale(1.0)
+  }
+}
+
+@keyframes sk-bouncedelay {
+  10%, 20%, 30% {
+    -webkit-transform: scale(0);
+    transform: scale(0);
+  }
+  40% {
+    -webkit-transform: scale(1.0);
+    transform: scale(1.0);
+  }
+}

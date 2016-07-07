@@ -1,0 +1,11 @@
+<select class="i18n" [ngModel]="language" (ngModelChange)="changeResource($event)">
+    <option value="en-us">
+        {{'general_language_option_english' | translate}}
+    </option>
+    <option value="es-co">
+        {{'general_language_option_spanish' | translate}}
+    </option>
+</select>
+
+
+

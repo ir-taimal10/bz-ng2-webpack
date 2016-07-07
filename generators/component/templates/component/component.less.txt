@@ -1,0 +1,16 @@
+<%= splitName %> {
+  display: block;
+  background-color: #fdffff;
+  padding: 5px;
+  margin: 8px;
+  border-radius:  3px;
+  border: 1px solid #dadada;
+  box-shadow: 0 4px 6px -3px hsla(0,0%,76%,.15);
+  h{
+    color: #3a4585;
+    font-size: 16px;
+  }
+  span{
+    color: #002300;
+  }
+}
