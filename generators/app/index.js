@@ -1,5 +1,6 @@
 'use strict';
-
+//npm adduser
+//npm publish ./
 let generators = require('yeoman-generator');
 let yosay = require('yosay');
 let path = require('path');
