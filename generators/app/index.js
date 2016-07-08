@@ -52,7 +52,7 @@ module.exports = generators.Base.extend({
   },
 
   config: function () {
-    this.template('.gitignore', '.gitignore');
+    this.template('_.gitignore', '.gitignore');
     this.template('WebContent/package.json', 'WebContent/package.json');
     this.template('WebContent/README.md', 'WebContent/README.md');
     this.template('WebContent/tsconfig.json', 'WebContent/tsconfig.json');

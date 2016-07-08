@@ -25,6 +25,13 @@ Using a terminal, place yourself on the folder where the project will be hosted 
 \anyfolder> npm install -g generator-bz-ng2-webpack
 ```
 
+
+Create projectFolder
+```bash
+\anyfolder> mkdir projectFolder
+\anyfolder> cd projectFolder
+```
+
 ### Using the template project 
 
 Making use of a terminal, go to the folder where the template project will be hosted and then execute the following commands.
