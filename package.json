@@ -1,6 +1,6 @@
 {
   "name": "generator-bz-ng2-webpack",
-  "version": "0.0.1",
+  "version": "0.0.2",
   "description": "Template to generate a basic project with the necessary structure of folders and code, angular2, typescript, webpack and less",
   "keywords": [
     "yeoman-generator",
