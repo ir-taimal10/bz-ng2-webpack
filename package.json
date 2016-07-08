@@ -1,13 +1,13 @@
 {
-  "name": "generator-ng2-webpack",
-  "version": "0.1.1",
+  "name": "generator-bz-ng2-webpack",
+  "version": "0.0.1",
   "description": "Scaffold out a front-end project with angular2, typescript and much more..",
   "keywords": [
     "yeoman-generator",
     "angular2",
     "typescript",
-    "systemjs",
-    "webpack"
+    "webpack",
+    "less"
   ],
   "scripts": {
     "lint": "eslint ./ --ignore-pattern .gitignore"
@@ -15,14 +15,14 @@
   "engines": {
     "node": "6.2.0"
   },
-  "homepage": "https://github.com/shibbir/generator-angular2-typescript",
-  "bugs": "https://github.com/shibbir/generator-angular2-typescript/issues",
+  "homepage": "https://github.com/itaimal/bz-ng2-webpack",
+  "bugs": "https://github.com/itaimal/bz-ng2-webpack/issues",
   "author": {
-    "name": "Shibbir Ahmed",
-    "email": "shibbir.cse@gmail.com",
-    "url": "https://github.com/shibbir"
+    "name": "Ivan Ricardo",
+    "email": "rtaimal@gmail.com",
+    "url": "http://itaimal.github.io/#/"
   },
-  "repository": "shibbir/generator-angular2-typescript",
+  "repository": "https://github.com/itaimal/bz-ng2-webpack",
   "main": "app/index.js",
   "license": "MIT",
   "files": [
