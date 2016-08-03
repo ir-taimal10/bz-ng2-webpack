@@ -55,6 +55,12 @@ module.exports = {
 
   },
 
+  resolveLoader: {
+    alias: {
+      'component-style-loader': require.resolve('./component-style-loader')
+    }
+  },
+
   /*
    * Options affecting the resolving of modules.
    *
@@ -178,7 +184,7 @@ module.exports = {
       {
         test: /\.less$/,
         exclude: /node_modules/,
-        loader: 'style-loader!css-loader!autoprefixer-loader!less-loader'
+        loader: 'component-style-loader!css-loader!autoprefixer-loader!less-loader'
       },
       {
         test: /\.(png|jpg|gif)(\?.*$|$)/,

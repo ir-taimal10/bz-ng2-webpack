@@ -1,8 +1,7 @@
 import {
-    beforeEachProviders,
-    describe,
-    inject,
-    it
+  addProviders,
+    inject
+
 } from '@angular/core/testing';
 import {BaseRequestOptions} from '@angular/http';
 import {MockBackend} from '@angular/http/testing';
@@ -32,14 +31,14 @@ class MockActivatedRoute {
 
 describe('<%=props.upperCamelCaseName%>', () => {
     // provide our implementations or mocks to the dependency injector
-    beforeEachProviders(() => [
+    beforeEach(() => {addProviders([
         BaseRequestOptions,
         MockBackend,
         {provide: ActivatedRoute, useClass: MockActivatedRoute},
         {provide: TranslateService, useClass: MockTranslateService},
         I18n,
         <%=props.upperCamelCaseName%>
-    ]);
+    ])});
     let <%=props.componentName%>:<%=props.upperCamelCaseName%>;
 
     it('should be defined', inject([<%=props.upperCamelCaseName%>], (_<%=props.componentName%>) => {

@@ -1,7 +1,7 @@
 import {
-    beforeEachProviders,
-    inject,
-    it
+  addProviders,
+  inject
+
 } from '@angular/core/testing';
 
 // Load the implementations that should be tested
@@ -11,32 +11,32 @@ import {TranslateService} from "ng2-translate/ng2-translate";
 import {I18n} from "./i18n/i18n.service";
 
 
-
 class MockTranslateService extends TranslateService {
-    constructor() {
-        super(null, null);
-    }
+  constructor() {
+    super(null, null);
+  }
 
-    public instant(text:string) {
-        return text;
-    }
+  public instant(text: string) {
+    return text;
+  }
 }
 
 
-
 describe('App', () => {
-    // provide our implementations or mocks to the dependency injector
-    beforeEachProviders(() => [
-        AppState,
-        {provide: TranslateService, useClass: MockTranslateService},
-        I18n,
-        App
-    ]);
-    let app:App;
+  // provide our implementations or mocks to the dependency injector
+  beforeEach(() => {
+    addProviders([
+      AppState,
+      {provide: TranslateService, useClass: MockTranslateService},
+      I18n,
+      App
+    ])
+  });
+  let app: App;
 
-    it('should be defined', inject([App], (_app) => {
-        app = _app;
-        expect(app).toBeDefined();
-    }));
+  it('should be defined', inject([App], (_app) => {
+    app = _app;
+    expect(app).toBeDefined();
+  }));
 
 });

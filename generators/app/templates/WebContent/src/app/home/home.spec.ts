@@ -1,8 +1,6 @@
 import {
-    beforeEachProviders,
-    describe,
-    inject,
-    it
+  addProviders,
+  inject
 } from '@angular/core/testing';
 import {BaseRequestOptions} from '@angular/http';
 import {MockBackend} from '@angular/http/testing';
@@ -14,38 +12,40 @@ import {Home} from "./home.component";
 
 
 class MockTranslateService extends TranslateService {
-    constructor() {
-        super(null, null);
-    }
+  constructor() {
+    super(null, null);
+  }
 
-    public instant(text:string) {
-        return text;
-    }
+  public instant(text: string) {
+    return text;
+  }
 }
 
 class MockActivatedRoute {
-    private params = Observable.of({
-        param1: 'test1',
-        param2: 'test2'
-    });
+  private params = Observable.of({
+    param1: 'test1',
+    param2: 'test2'
+  });
 }
 
 describe('Home', () => {
-    // provide our implementations or mocks to the dependency injector
-    beforeEachProviders(() => [
-        BaseRequestOptions,
-        MockBackend,
-        {provide: ActivatedRoute, useClass: MockActivatedRoute},
-        {provide: TranslateService, useClass: MockTranslateService},
-        I18n,
-        Home
-    ]);
-    let home:Home;
+  // provide our implementations or mocks to the dependency injector
+  beforeEach(() => {
+    addProviders([
+      BaseRequestOptions,
+      MockBackend,
+      {provide: ActivatedRoute, useClass: MockActivatedRoute},
+      {provide: TranslateService, useClass: MockTranslateService},
+      I18n,
+      Home
+    ])
+  });
+  let home: Home;
 
-    it('should be defined', inject([Home], (_home) => {
-        home = _home;
-        expect(home).toBeDefined();
-    }));
+  it('should be defined', inject([Home], (_home) => {
+    home = _home;
+    expect(home).toBeDefined();
+  }));
 
 
 });

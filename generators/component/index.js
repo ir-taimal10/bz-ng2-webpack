@@ -73,8 +73,8 @@ module.exports = generators.Base.extend({
   },
 
   end: function () {
-    this.log(yosay("We're almost ready! \n " +
-      "To start the project follow these 3 steps.\n\n" +
-      "Run the commands on the WebContent folder :\n"));
+    this.log(yosay("Work done! \n " +
+      "Now you can use the new component.\n\n" +
+      "\n"));
   }
 });

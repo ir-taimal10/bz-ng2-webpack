@@ -1,7 +1,7 @@
 //Global less
-require('./app/commons/fonts/flaticon/flaticon.less');
-require('./app/commons/fonts/segoeUI/segoeui.less');
-require('./app/commons/styles/commons.less');
+require('!style-loader!css-loader!autoprefixer-loader!less-loader!./app/commons/fonts/flaticon/flaticon.less');
+require('!style-loader!css-loader!autoprefixer-loader!less-loader!./app/commons/fonts/segoeUI/segoeui.less');
+require('!style-loader!css-loader!autoprefixer-loader!less-loader!./app/commons/styles/commons.less');
 /*
  * Providers provided by Angular
  */
