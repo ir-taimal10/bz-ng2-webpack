@@ -68,9 +68,7 @@ On the folder where the component template will be installed execute the followi
 ```
 
 
-## License
-
-Apache-2.0 © [Ivan Taimal]
+ [Ivan Taimal]
 
 
 
